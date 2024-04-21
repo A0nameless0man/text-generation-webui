@@ -390,7 +390,7 @@ let currentChatInputHeight = 0;
 // Update chat layout based on chat and input dimensions
 function updateCssProperties() {
   const chatContainer = document.getElementById("chat").parentNode.parentNode.parentNode;
-  const chatInputHeight = document.querySelector("#chat-input textarea").clientHeight;
+  const chatInputHeight = document.querySelector("#Impersonate").parentNode.parentNode.clientHeight;
 
   // Check if the chat container is visible
   if (chatContainer.clientHeight > 0) {
