@@ -635,13 +635,6 @@ div.svelte-362y77>*, div.svelte-362y77>.form>* {
     flex-grow: 0 !important;
 }
 
-#generate-stop-container {
-    min-width: 0 !important;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 3px;
-    flex: 0 auto !important;
-}
 
 #chat-input-container {
     min-width: 0 !important;

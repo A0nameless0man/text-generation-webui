@@ -302,19 +302,19 @@ document.addEventListener("click", function (event) {
 //------------------------------------------------
 // Relocate the "Show controls" checkbox
 //------------------------------------------------
-var elementToMove = document.getElementById("show-controls");
-var parent = elementToMove.parentNode;
-for (var i = 0; i < 2; i++) {
-  parent = parent.parentNode;
-}
+// var elementToMove = document.getElementById("show-controls");
+// var parent = elementToMove.parentNode;
+// for (var i = 0; i < 2; i++) {
+//   parent = parent.parentNode;
+// }
 
-parent.insertBefore(elementToMove, parent.firstChild);
+// parent.insertBefore(elementToMove, parent.firstChild);
 
 //------------------------------------------------
 // Make the chat input grow upwards instead of downwards
 //------------------------------------------------
-document.getElementById("show-controls").parentNode.style.position = "absolute";
-document.getElementById("show-controls").parentNode.style.bottom = "0px";
+document.getElementById("chat-input-row").style.position = "absolute";
+document.getElementById("chat-input-row").style.bottom = "0px";
 
 //------------------------------------------------
 // Focus on the chat input

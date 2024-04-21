@@ -94,7 +94,7 @@ def create_event_handlers():
         ui.gather_interface_values, gradio(shared.input_elements), gradio('interface_state')).then(
         lambda x: x, gradio('grammar_string'), gradio('save_contents')).then(
         lambda: 'grammars/', None, gradio('save_root')).then(
-        lambda: 'My Fancy Grammar.gbnf', None, gradio('save_filename')).then(
+        lambda x: x, gradio('grammar_file'), gradio('save_filename')).then(
         lambda: gr.update(visible=True), None, gradio('file_saver'))
 
     shared.gradio['delete_grammar'].click(
